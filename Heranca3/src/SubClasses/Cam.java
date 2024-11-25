@@ -1,5 +1,5 @@
 package SubClasses;
-public class Cam extends Tipo {
+public class Cam extends Veiculo {
 	//Criando apenas os atributos adicionais desta classe, os quais são: Quantidade de eixos e o peso bruto.
 
 	private int eixos;
@@ -12,9 +12,9 @@ public class Cam extends Tipo {
     }
   //Usando o override para alterar o comportamento de um método herdado da superclasse nas subclasses.
     @Override
-    public String geraInsert() {
+    public String gerarComandoInsert() {
         return String.format(
-            "INSERT INTO Caminhao (tipo, fab, eixos, peso) " +
+            "INSERT INTO Veiculos (tipo, fab, eixos, peso) " +
             "VALUES ('%s', %d, %d, %d);",
             tipo, fab, eixos, peso
         );

@@ -1,5 +1,5 @@
 package SubClasses;
-public class Moto extends Tipo {
+public class Moto extends Veiculo {
 	//Criando apenas os atributos adicionais desta classe, que são cilindradas e o torque da motoca.
 	private int cilindradas;
     private int torque;
@@ -11,9 +11,9 @@ public class Moto extends Tipo {
     }
   //Usando o override para alterar o comportamento de um método herdado da superclasse nas subclasses.
     @Override
-    public String geraInsert() {
+    public String gerarComandoInsert()	 {
         return String.format(
-            "INSERT INTO Moto (tipo, fab, cilindradas, torque) " +
+            "INSERT INTO Veiculos (tipo, fab, cilindradas, torque) " +
             "VALUES ('%s', %d, %d, %d);",
             tipo, fab, cilindradas, torque
         );

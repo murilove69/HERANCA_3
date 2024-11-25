@@ -1,7 +1,7 @@
 package SubClasses;
-public class Bike extends Tipo {
+public class Bike extends Veiculo {
    
-	//Aqui ja devem ser adicionados mais atributos à classe, como marca, cor, mateiral, quantidade de marchas e amortecedor. Estes são os atributos dela.
+	//Aqui ja devem ser adicionados mais atributos à classe, como marca, cor, material, quantidade de marchas e amortecedor. Estes são os atributos dela.
 	private String marca;
     private String cor;
     private String material;
@@ -18,9 +18,9 @@ public class Bike extends Tipo {
     }
   //Usando o override para alterar o comportamento de um método herdado da superclasse nas subclasses.
     @Override
-    public String geraInsert() {
+    public String gerarComandoInsert() {
         return String.format(
-            "INSERT INTO Bike (tipo, fab, marca, cor, material, marcha, amortecedor) " +
+            "INSERT INTO Veiculos (tipo, fab, marca, cor, material, marcha, amortecedor) " +
             "VALUES ('%s', %d, '%s', '%s', '%s', %d, %b);",
             tipo, fab, marca, cor, material, marcha, amortecedor
         );

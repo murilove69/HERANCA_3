@@ -16,9 +16,11 @@ Crie vários objetos para testar as classes e seus métodos.
 Java - Versão 22.0.2
 
 ## Instalação
-O projeto é não executavél, pois necessita de uma IDE.
+
+O projeto é executavél, mas necessita da IDE e um Server, para poder adicionar as informações no Banco de Dados.
 
 ## Construido com
+
 IDE Eclipse
 
 ## Versão
